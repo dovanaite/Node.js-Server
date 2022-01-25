@@ -4,10 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "server": "node . NODE_ENV=production",
-        "test": "node . NODE_ENV=test",
-        "dev": "nodemon"
+        "dev": "nodemon",
+        "server": "NODE_ENV=production node .",
+        "test": "NODE_ENV=test node ./index.js"
     },
     "keywords": [],
     "author": "Donata <d.dvarionaite@gmail.com>",
