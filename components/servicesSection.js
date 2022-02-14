@@ -1,23 +1,23 @@
-const file = require("../lib/file.js");
-const folder = require("../lib/folder.js");
-const utils = require("../lib/utils.js");
+import { file } from "../lib/file.js";
+import { folder } from "../lib/folder.js";
+import { utils } from "../lib/utils.js";
 
 async function servicesSection() {
     function isValid(service) {
-        if (typeof service !== 'object' ||
-            service === null ||
-            Array.isArray(service) ||
-            Object.keys(service).length !== 4 ||
-            typeof service.isActive !== 'boolean' ||
-            !service.icon ||
-            typeof service.icon !== 'string' ||
-            service.icon.length > 20 ||
-            !service.title ||
-            typeof service.title !== 'string' ||
-            service.title.length > 40 ||
-            !service.description ||
-            typeof service.description !== 'string' ||
-            service.description.length > 200) {
+        if (typeof service !== 'object'
+            || service === null
+            || Array.isArray(service)
+            || Object.keys(service).length !== 4
+            || typeof service.isActive !== 'boolean'
+            || !service.icon
+            || typeof service.icon !== 'string'
+            || service.icon.length > 20
+            || !service.title
+            || typeof service.title !== 'string'
+            || service.title.length > 40
+            || !service.description
+            || typeof service.description !== 'string'
+            || service.description.length > 200) {
             return false;
         }
         return true;
@@ -59,4 +59,4 @@ async function servicesSection() {
             </section>`;
 }
 
-module.exports = servicesSection;
+export { servicesSection };

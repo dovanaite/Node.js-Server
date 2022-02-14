@@ -7,12 +7,11 @@ body * {
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
 }
 
-
 /* custom properties, a.k.a. CSS variables */
-
 :root {
     --primary-color: #f34879;
     --secondary-color: #fd685f;
@@ -27,9 +26,17 @@ body {
 }
 
 .bg-gradient {
-    background: linear-gradient( 180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(
+        180deg,
+        var(--primary-color) 0%,
+        var(--secondary-color) 100%
+    );
 }
 
 img {
     width: 100%;
+}
+
+footer {
+    background-color: #eee;
 }

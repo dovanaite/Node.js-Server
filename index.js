@@ -1,11 +1,9 @@
-const config = require('./config.js');
-const server = require('./lib/server.js');
+import { server } from './lib/server.js';
 
 const app = {};
 
 app.init = () => {
-
-    // pasiruosti pradinius folder'ius
+    // pasiruosti pradinius folder'ius:
 
     // pasiruosti pradinius failus
 
@@ -21,4 +19,4 @@ app.init = () => {
 
 app.init();
 
-module.exports = app;
+export { app };

@@ -3,17 +3,14 @@
     gap: 2em;
     font-size: 1.5em;
 }
-
-.blog-inner>.title {
+.blog-inner > .title {
     font-size: 4em;
 }
-
-.blog-inner>p {}
-
-.blog-inner>footer {
+.blog-inner > p {
+}
+.blog-inner > footer {
     font-style: italic;
 }
-
-.blog-inner>footer::before {
+.blog-inner > footer::before {
     content: '- ';
 }
